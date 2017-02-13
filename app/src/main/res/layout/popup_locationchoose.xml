@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changeaddress_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            >
+
+            <View
+                android:background="@color/silver"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <TextView
+                android:id="@+id/btn_myinfo_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="18dp"
+                android:text="取消"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="15dip"
+                android:textColor="#e84515"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/btn_myinfo_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="#e84515"
+                android:paddingRight="18dp"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d8d8d8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+          <guozhaohui.com.wlylocationchoose.locationchoose.WheelView
+              android:id="@+id/provinceView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"/>
+
+
+            <guozhaohui.com.wlylocationchoose.locationchoose.WheelView
+                android:id="@+id/cityView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <guozhaohui.com.wlylocationchoose.locationchoose.WheelView
+                android:id="@+id/districtView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
